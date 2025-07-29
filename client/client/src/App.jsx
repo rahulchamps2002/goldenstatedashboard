@@ -6,6 +6,7 @@ import PlayerRoster from './components/PlayerRoster'
 import GameList from './components/GameList'
 import GameChart from './components/GameChart'
 import Footer from './components/Footer'
+const API_BASE = import.meta.env.VITE_API_URL
 
 function App() {
   const [team, setTeam] = useState(null)
@@ -19,17 +20,17 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const teamRes = await fetch('/api/team')
+        const teamRes = await fetch(`${API_BASE}/api/team`)
         if (!teamRes.ok) throw new Error('Failed to load team data')
         const teamData = await teamRes.json()
         setTeam(teamData.teams[0])
 
-        const playersRes = await fetch('/api/players')
+        const playersRes = await fetch(`${API_BASE}/api/players`)
         if (!playersRes.ok) throw new Error('Failed to load player data')
         const playersData = await playersRes.json()
         setPlayers(playersData.player || [])
 
-        const gamesRes = await fetch('/api/games')
+        const gamesRes = await fetch(`${API_BASE}/api/games`)
         if (!gamesRes.ok) throw new Error('Failed to load games data')
         const gamesData = await gamesRes.json()
         setGames(gamesData.results || [])
