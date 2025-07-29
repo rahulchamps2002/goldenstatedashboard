@@ -98,7 +98,7 @@ function App() {
         <a href="#team-info" onClick={(e) => handleScroll(e, 'team-info')} style={navLinkStyle}>Team Info</a>
         <a href="#player-roster" onClick={(e) => handleScroll(e, 'player-roster')} style={navLinkStyle}>Players</a>
         <a href="#game-list" onClick={(e) => handleScroll(e, 'game-list')} style={navLinkStyle}>Games</a>
-        <a href="#game-chart" onClick={(e) => handleScroll(e, 'game-chart')} style={navLinkStyle}>Chart</a>
+        
       </nav>
 
       <main className="main">
