@@ -1,4 +1,5 @@
 # Golden State Warriors Dashboard
+## By Rahul Champaneria
 
 A simple interactive web dashboard that is utilizable on PC, laptop, tablet, and mobile. This dashboard displays the various details about the Golden State Warriors such as the players and the head coach. Using <b>React</b> on the frontend and <b>Flask</b> on the backend, I utilized data given through APIs from TheSportsDB.
 
