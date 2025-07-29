@@ -1,0 +1,9 @@
+.games {
+  margin-top: 2rem;
+  color: #1d428a;
+}
+
+.games ul {
+  list-style: none;
+  padding: 0;
+}

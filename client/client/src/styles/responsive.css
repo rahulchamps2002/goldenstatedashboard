@@ -1,0 +1,67 @@
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+
+  .player-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-card {
+    width: 90%;
+  }
+
+  .games ul {
+    padding: 0;
+  }
+
+  .games li {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .about h2 {
+    font-size: 1rem;
+  }
+
+  .about p {
+    font-size: 0.85rem;
+  }
+
+  .player-card h3 {
+    font-size: 1rem;
+  }
+
+  .player-card p {
+    font-size: 0.85rem;
+  }
+
+  .games li {
+    font-size: 0.8rem;
+  }
+}
